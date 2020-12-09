@@ -25,15 +25,21 @@ How many students each class can have is controlled by maximum_students in class
 ## Classes URL's list
 
 GET: http://localhost:8080/api/classes/list
+
 GET: http://localhost:8080/api/classes/view/{id}
+
 POST: http://localhost:8080/api/classes/add
+
 POST: http://localhost:8080/api/classes/edit
 
 ## Students URL's list
 
 GET: http://localhost:8080/api/students/list
+
 GET: http://localhost:8080/api/students/view/{id}
+
 POST: http://localhost:8080/api/students/add
+
 POST: http://localhost:8080/api/students/edit
 
 ## License
