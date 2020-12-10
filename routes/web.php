@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\VideoController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +16,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/videos', [VideoController::class, 'index']);
+Route::get('/videos/view/{id}', [VideoController::class, 'view']);
+Route::get('/videos/upload', [VideoController::class, 'upload']);
+Route::post('/videos/add', [VideoController::class, 'store']);
